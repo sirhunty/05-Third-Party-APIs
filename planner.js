@@ -1,9 +1,9 @@
 // current date displayed at top
 $("#currentDay").append(moment().format("dddd, MMMM Do, YYYY"));
 
-
+// put .hour(12) between ) and .format to test colors when past 5pm
 // Setting current time to the beggining/top of the current hour
-const currentTime = parseInt(moment().hour(12).format("HH00"), 10);
+const currentTime = parseInt(moment().format("HH00"), 10);
 
 // for each hour block up to the length of the array
 for (var i = 0; i < $("textarea").length; i++) {
